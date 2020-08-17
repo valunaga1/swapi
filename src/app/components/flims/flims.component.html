@@ -1,0 +1,17 @@
+<div class="container top-cont">
+    <h1>Films<small>Star Wars</small></h1>
+    <hr>
+    <br>
+    <div class="card-columns">
+        <div class="card" *ngFor="let pelicula of listaPeliculas;let i=index ">
+            <div class="card-header ">
+                <h5>{{pelicula.title}} </h5>
+            </div>
+            <div class="card-body ">
+                <p class="card-text ">{{pelicula.opening_crawl}}</p>
+                <button (click)="verFlim(i)" type="button " class="btn btn-primary btn-block ">
+                    Ver mas...
+                    </button></div>
+        </div>
+    </div>
+</div>
